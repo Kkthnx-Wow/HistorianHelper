@@ -1,7 +1,7 @@
 local JupaHelperFrame = CreateFrame("Frame")
 
 -- Constants for gossip options
-local GOSSIP_OPTIONS = {
+local JUPA_GOSSIP_OPTIONS = {
 	46036, -- A Luckydo
 	42026, -- Acherus
 	46166, -- Aedelas Blackmoore
@@ -112,23 +112,38 @@ local function GetGossipNPCID()
 		local _, _, _, _, _, npcID = strsplit("-", guid)
 		return tonumber(npcID)
 	end
+
 	return nil
 end
 
 -- Function to select gossip options
 local function SelectGossipOptions()
-	for _, optionID in ipairs(GOSSIP_OPTIONS) do
+	local GetGossipOptions = C_GossipInfo.GetOptions()
+	if not GetGossipOptions or #GetGossipOptions == 0 then
+		-- No options available, exit early
+		return false
+	end
+
+	for _, optionID in ipairs(JUPA_GOSSIP_OPTIONS) do
 		C_GossipInfo.SelectOption(optionID)
 	end
+
+	return true
 end
 
 -- Event handler
-JupaHelperFrame:RegisterEvent("GOSSIP_SHOW")
-JupaHelperFrame:SetScript("OnEvent", function(_, event, ...)
+local function OnEvent(_, event, ...)
 	if event == "GOSSIP_SHOW" then
 		local npcID = GetGossipNPCID()
 		if npcID == JUPA_NPC_ID then
-			SelectGossipOptions()
+			local JupaInteracted = SelectGossipOptions()
+			if not JupaInteracted then
+				-- No gossip options to interact with, exit
+				return
+			end
 		end
 	end
-end)
+end
+
+JupaHelperFrame:RegisterEvent("GOSSIP_SHOW")
+JupaHelperFrame:SetScript("OnEvent", OnEvent)

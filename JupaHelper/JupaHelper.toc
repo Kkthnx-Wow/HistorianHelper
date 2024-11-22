@@ -3,9 +3,9 @@
 ## Title: |cff5bc0beJupa Helper|r
 ## Notes: Automates Historian Jupa's gossip options for effortless lore interaction.|n|n|cff669DFFDeveloper|cffffffff:|r |nJosh "|CFF7b8489Kkthnx|r" Russell|n|n|cff009cdePayPal|r|cffffffff:|r |n|cffffffffwww.paypal.me/KkthnxTV|r|n|n|cfff96854Patreon|r|cffffffff:|r |n|cffffffffwww.patreon.com/Kkthnx|r
 ## Author: Josh "Kkthnx" Russell
-## Version: 1.0.0
+## Version: 1.0.1
 ## IconTexture: 236456
 ## X-Support: TWW
-## X-Curse-Project-ID:
+## X-Curse-Project-ID: 1145359
 
 JupaHelper.lua
