@@ -24,11 +24,11 @@ JupaHelper is a World of Warcraft addon designed to automate interactions with *
 - **Game Version:** Retail (The War Within 11.0.5+).
 - **Event:** Specifically designed for the **20th Anniversary** event in World of Warcraft.
 
-## 🚀 Join the Community
+## Join the Community
 
 Connect with thousands of users who have embraced KkthnxUI and related addons. Whether you're a casual player or a seasoned veteran, join our vibrant community on [Discord](https://discord.gg/Rc9wcK9cAB).
 
-## 🎁 Show Your Support
+## Show Your Support
 
 Appreciate the hard work that goes into KkthnxUI and addons like JupaHelper? Consider showing your support:
 
@@ -36,7 +36,7 @@ Appreciate the hard work that goes into KkthnxUI and addons like JupaHelper? Con
 - **Donate via PayPal**: [PayPal Donation](https://www.paypal.com/paypalme/kkthnxtv).
 - **Gold Contributions**: Send in-game gold to Kkthnx on the Area 52 realm.
 
-## 🤝 Contribute and Collaborate
+## Contribute and Collaborate
 
 Your contributions, whether big or small, are invaluable in shaping the future of addons like JupaHelper. Interested in helping out? Reach out on [Discord](https://discord.gg/Rc9wcK9cAB).
 
