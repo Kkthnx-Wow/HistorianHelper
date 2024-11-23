@@ -1,22 +1,22 @@
-# JupaHelper
+# HistorianHelper
 
-JupaHelper is a World of Warcraft addon designed to automate interactions with **Historian Jupa** (NPC ID: 110035) during the game's 20th Anniversary event. This addon saves time by automatically selecting the correct gossip options when interacting with the NPC.
+HistorianHelper is a World of Warcraft addon designed to automate interactions with **Historian NPCs** (NPC IDs: 110034, 110035) during the game's 20th Anniversary event. This addon saves time by automatically selecting the correct gossip options when interacting with the NPC.
 
 ## Features
 
-- Automatically selects Historian Jupa's gossip options for efficient interactions.
-- Only activates when interacting with Historian Jupa, ensuring no interference with other NPCs.
+- Automatically selects Historian's gossip options for efficient interactions.
+- Only activates when interacting with Historians, ensuring no interference with other NPCs.
 - Lightweight and simple to use.
 
 ## Installation
 
 1. Download the addon and extract it into your World of Warcraft `Interface/AddOns` folder.
-2. Ensure the folder is named `JupaHelper`.
+2. Ensure the folder is named `HistorianHelper`.
 3. Restart your game or use `/reload` in the chat to load the addon.
 
 ## Usage
 
-- During the **20th Anniversary Event**, interact with Historian Jupa.
+- During the **20th Anniversary Event**, interact with Historians.
 - The addon will automatically handle the gossip options for you.
 
 ## Compatibility
@@ -26,11 +26,11 @@ JupaHelper is a World of Warcraft addon designed to automate interactions with *
 
 ## Join the Community
 
-Connect with thousands of users who have embraced KkthnxUI and related addons. Whether you're a casual player or a seasoned veteran, join our vibrant community on [Discord](https://discord.gg/Rc9wcK9cAB).
+Connect with thousands of users who have embraced HistorianHelper and related addons. Whether you're a casual player or a seasoned veteran, join our vibrant community on [Discord](https://discord.gg/Rc9wcK9cAB).
 
 ## Show Your Support
 
-Appreciate the hard work that goes into KkthnxUI and addons like JupaHelper? Consider showing your support:
+Appreciate the hard work that goes into HistorianHelper and addons? Consider showing your support:
 
 - **Gift Gametime/Blizzard Balance**: Send to Kkthnx's gamertag: **Kkthnx#1105** or via **JRussell20@gmail.com**.
 - **Donate via PayPal**: [PayPal Donation](https://www.paypal.com/paypalme/kkthnxtv).
