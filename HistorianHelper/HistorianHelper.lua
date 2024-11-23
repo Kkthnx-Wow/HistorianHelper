@@ -1,7 +1,7 @@
-local JupaHelperFrame = CreateFrame("Frame")
+local HistorianHelperFrame = CreateFrame("Frame")
 
 -- Constants for gossip options
-local JUPA_GOSSIP_OPTIONS = {
+local HISTORIAN_GOSSIP_OPTIONS = {
 	46036, -- A Luckydo
 	42026, -- Acherus
 	46166, -- Aedelas Blackmoore
@@ -102,8 +102,11 @@ local JUPA_GOSSIP_OPTIONS = {
 	111342, -- Ysera
 }
 
--- NPC ID for Historian Jupa
-local JUPA_NPC_ID = 110035
+-- NPC IDs for Historians
+local HISTORIAN_NPC_ID = {
+	[110035] = true,
+	[110034] = true,
+}
 
 -- Function to get the NPC ID from gossip
 local function GetGossipNPCID()
@@ -124,7 +127,7 @@ local function SelectGossipOptions()
 		return false
 	end
 
-	for _, optionID in ipairs(JUPA_GOSSIP_OPTIONS) do
+	for _, optionID in ipairs(HISTORIAN_GOSSIP_OPTIONS) do
 		C_GossipInfo.SelectOption(optionID)
 	end
 
@@ -135,9 +138,9 @@ end
 local function OnEvent(_, event, ...)
 	if event == "GOSSIP_SHOW" then
 		local npcID = GetGossipNPCID()
-		if npcID == JUPA_NPC_ID then
-			local JupaInteracted = SelectGossipOptions()
-			if not JupaInteracted then
+		if HISTORIAN_NPC_ID[npcID] then -- Check if the NPC is a Historian
+			local HistorianInteracted = SelectGossipOptions()
+			if not HistorianInteracted then
 				-- No gossip options to interact with, exit
 				return
 			end
@@ -145,5 +148,5 @@ local function OnEvent(_, event, ...)
 	end
 end
 
-JupaHelperFrame:RegisterEvent("GOSSIP_SHOW")
-JupaHelperFrame:SetScript("OnEvent", OnEvent)
+HistorianHelperFrame:RegisterEvent("GOSSIP_SHOW")
+HistorianHelperFrame:SetScript("OnEvent", OnEvent)
